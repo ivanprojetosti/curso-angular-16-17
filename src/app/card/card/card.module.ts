@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { CardComponent } from '../card.component';
 import { CardButtonComponent } from '../../card-button/card-button.component';
 import { CardRoxoComponent } from '../../card-roxo/card-roxo.component';
+import { StylesNgDeepComponent } from '../../styles-ng-deep/styles-ng-deep.component';
+import { StylesNgHostComponent } from '../../styles-ng-host/styles-ng-host.component';
 
 @NgModule({
   imports: [
@@ -11,12 +13,16 @@ import { CardRoxoComponent } from '../../card-roxo/card-roxo.component';
   declarations: [
     CardComponent,
     CardButtonComponent,
-    CardRoxoComponent
+    CardRoxoComponent,
+    StylesNgDeepComponent,
+    StylesNgHostComponent
   ],
   exports: [
     CardComponent,
     CardButtonComponent,
-    CardRoxoComponent
+    CardRoxoComponent,
+    StylesNgDeepComponent,
+    StylesNgHostComponent
   ] 
 })
 export class CardModule { }
