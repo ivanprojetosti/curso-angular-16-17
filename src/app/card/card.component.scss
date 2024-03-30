@@ -20,3 +20,9 @@
     height: 100px;
     background-color: chocolate;
 }
+
+:host ::ng-deep  .style-ng-host{
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+}
