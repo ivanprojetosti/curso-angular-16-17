@@ -1,5 +1,30 @@
 
-<div style="display: flex; flex-grow: grow">
-    <app-card class="espacamento-planos"></app-card>
-    <app-card-roxo class="espacamento-planos"></app-card-roxo>
+
+
+
+<div id="aulas">
+    <button (click)="mostrarAulasBinding()">Exibir Aulas Binding</button>
+    <button (click)="mostrarAulasStyles()">Exibir Aulas Styles</button>
+    <div id="binding">
+
+    </div>
+
+    <div id="binding">
+        @if(exibirAulasBinding){
+            <app-binding></app-binding>
+        }
+
+    </div>
+
+    <div id="styles">
+        @if(exibirAulasStyles){
+            <div style="display: flex; flex-grow: grow">
+                <app-card class="espacamento-planos"></app-card>
+                <app-card-roxo class="espacamento-planos"></app-card-roxo>
+            </div>
+            
+        }    
+    </div>
+    
 </div>
+

@@ -7,4 +7,20 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'projeto-curso';
+
+    // Aulas
+    exibirAulasBinding: boolean = true;
+    exibirAulasStyles: boolean = false;
+
+  constructor(){
+
+  }
+  mostrarAulasBinding(){
+    this.exibirAulasBinding = this.exibirAulasBinding === true ? false : true;
+  }
+
+  mostrarAulasStyles(){
+    this.exibirAulasStyles = this.exibirAulasStyles === true ? false : true;
+
+  }
 }
