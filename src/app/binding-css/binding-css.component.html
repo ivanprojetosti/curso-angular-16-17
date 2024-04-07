@@ -1,0 +1,38 @@
+@if(aulaStyle){
+    <h1>STYLE</h1>
+
+    <button style="height: 50px; width: 150px; background-color: aqua;">STYLE PADRÃO</button><br>
+
+    <button [style]="'height: 50px; width: 160px; background-color: green;'">STYLE PADRÃO</button><br>
+    
+    <button [style]="cssList1">STYLE PROPRIEDADE STRING</button><br>
+    
+    <button [style]="buttonCss">STYLE PROPRIEDADE OBJETO</button><br>
+    
+    <button [style]="{
+        height: '50px', 
+        width: '190px', 
+        backgroundColor: 'yellow'
+    }">STYLE OBJETO HTML
+    </button><br>
+}
+
+@if(aulaClass){
+    <h1>CLASS</h1>
+
+    <button class="padrao">STYLE CLASS PADRÃO</button>
+    
+    <button [class.padrao]="true">STYLE CLASS TRUE/FALSE</button>
+
+    <button [class.padrao]="false">STYLE CLASS OBJETO TRUE/FALSE</button>
+
+    <button [class]="{
+        'class-button-one': true,
+        'class-button-two': true}">
+        STYLE CLASS OBJETO 44
+    </button>
+}
+
+
+
+

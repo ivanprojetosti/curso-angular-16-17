@@ -9,8 +9,9 @@ export class AppComponent {
   title = 'projeto-curso';
 
     // Aulas
-    exibirAulasBinding: boolean = true;
+    exibirAulasBinding: boolean = false;
     exibirAulasStyles: boolean = false;
+    exibirAulasBindingCss: boolean = true;
 
   constructor(){
 
@@ -22,5 +23,8 @@ export class AppComponent {
   mostrarAulasStyles(){
     this.exibirAulasStyles = this.exibirAulasStyles === true ? false : true;
 
+  }
+  mostrarAulasBindingCss(){
+    this.exibirAulasBindingCss = this.exibirAulasBindingCss === true ? false : true;
   }
 }

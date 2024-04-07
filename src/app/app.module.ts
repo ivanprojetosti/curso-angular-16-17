@@ -7,11 +7,13 @@ import { CardComponent } from './card/card.component';
 import { CardModule } from './card/card/card.module';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { BindingComponent } from './binding/binding.component';
+import { BindingCssComponent } from './binding-css/binding-css.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BindingComponent,
+    BindingCssComponent,
   ],
   imports: [
     BrowserModule,
