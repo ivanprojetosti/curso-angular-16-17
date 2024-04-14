@@ -11,7 +11,8 @@ export class AppComponent {
     // Aulas
     exibirAulasBinding: boolean = false;
     exibirAulasStyles: boolean = false;
-    exibirAulasBindingCss: boolean = true;
+    exibirAulasBindingCss: boolean = false;
+    exibirAulasInputOutput: boolean = true;
 
   constructor(){
 
@@ -26,5 +27,12 @@ export class AppComponent {
   }
   mostrarAulasBindingCss(){
     this.exibirAulasBindingCss = this.exibirAulasBindingCss === true ? false : true;
+  }
+  mostrarAulasInputOutput(){
+    this.exibirAulasInputOutput = this.exibirAulasInputOutput === true ? false : true;
+  }
+
+  receberInformacao(){
+    console.log("Recebido");
   }
 }

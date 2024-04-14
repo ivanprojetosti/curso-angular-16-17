@@ -35,6 +35,15 @@
             
         }    
     </div>
+
+    <div id="input-output">
+        @if(exibirAulasInputOutput){
+            <div style="display: flex; flex-grow: grow">
+                <app-input-output (entradaSaida)="receberInformacao()" [informacaoEntrada]="'Alterado'"></app-input-output>
+            </div>
+            
+        }    
+    </div>
     
 </div>
 
