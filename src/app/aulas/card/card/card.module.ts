@@ -25,4 +25,4 @@ import { StylesNgHostComponent } from '../../styles-ng-host/styles-ng-host.compo
     StylesNgHostComponent
   ] 
 })
-export class CardModule { }
+export class CardModuleOld { }

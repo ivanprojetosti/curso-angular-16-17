@@ -1,49 +1,8 @@
-
-
-
-
-<div id="aulas">
-    <button class="button-action" (click)="mostrarAulasBinding()">Exibir Aulas Binding</button>
-    <button class="button-action" (click)="mostrarAulasStyles()">Exibir Aulas Styles</button>
-    <button class="button-action" (click)="mostrarAulasStyles()">Exibir Aulas Styles</button>
-    <div id="binding">
-
-    </div>
-
-    <div id="binding">
-        @if(exibirAulasBinding){
-            <app-binding></app-binding>
-        }
-
-    </div>
-
-    <div id="styles">
-        @if(exibirAulasStyles){
-            <div style="display: flex; flex-grow: grow">
-                <app-card class="espacamento-planos"></app-card>
-                <app-card-roxo class="espacamento-planos"></app-card-roxo>
-            </div>
-            
-        }    
-    </div>
-
-    <div id="binding-css">
-        @if(exibirAulasBindingCss){
-            <div style="display: flex; flex-grow: grow">
-                <app-binding-css></app-binding-css>
-            </div>
-            
-        }    
-    </div>
-
-    <div id="input-output">
-        @if(exibirAulasInputOutput){
-            <div style="display: flex; flex-grow: grow">
-                <app-input-output (entradaSaida)="receberInformacao()" [informacaoEntrada]="'Alterado'"></app-input-output>
-            </div>
-            
-        }    
-    </div>
-    
+<div>
+    <app-card-button [styleButton]="'green'"></app-card-button>
+    <app-card-button [styleButton]="'purple'"></app-card-button>
 </div>
 
+<div>
+    <app-card-plano [typePlan]="'simples'" [stylePlan]="'purple'"></app-card-plano>
+</div>
